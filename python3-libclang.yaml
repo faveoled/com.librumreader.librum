@@ -4,7 +4,7 @@ build-commands:
   - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
     --prefix=${FLATPAK_DEST} "libclang" --no-build-isolation
   - mkdir -p $FLATPAK_DEST/lib
-  - cp $(readlink -f /usr/lib/sdk/llvm16/lib/libclang.so) $FLATPAK_DEST/lib/libclang.so
+  - cp $(readlink -f /usr/lib/sdk/llvm18/lib/libclang.so) $FLATPAK_DEST/lib/libclang.so
 
 sources:
   - type: file
